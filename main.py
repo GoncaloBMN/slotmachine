@@ -129,7 +129,7 @@ def runSlots(balance):
     return winnings - totalBet
 
 
-def main():
+if __name__ == "__main__":
     balance = getDeposit()
 
     while balance > 0:
@@ -139,5 +139,3 @@ def main():
         balance += runSlots(balance)
 
     print(f"You left with €{balance}.")
-
-main()
